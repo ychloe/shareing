@@ -11,7 +11,7 @@ library(tidyverse)
 library(knitr)
 library(gridExtra)
 library(Metrics)
-Car<- read.csv("C:/Users/chloe/Desktop/R project/test folder/QEM Aug 2019/QEM JAN 2019/CarPrice.csv")
+Car<- read.csv("C:/Users/Desktop/R project/CarPrice.csv")
 
 ###### Data Cleaning #####
 summary(Car)
