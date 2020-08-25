@@ -1,5 +1,5 @@
 #(a)
-mosquito <- read_excel("C:/Users/patrickverdun/Desktop/Exam2/mosquito.xls")
+mosquito <- read_excel("C:/Users/Desktop/mosquito.xls")
 View(mosquito)
 sum(mosquito$N)
 sum(mosquito$Surv)
