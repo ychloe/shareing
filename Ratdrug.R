@@ -1,5 +1,5 @@
 #b
-ratdrug18 <- read.csv("C:/Users/Desktop/Exam2/ratdrug18.txt", sep="")
+ratdrug18 <- read.csv("C:/Users/Desktop/ratdrug18.txt", sep="")
 IB <- NULL
 IB[which(ratdrug18$Drug=='B')] <- 1
 IB[which(ratdrug18$Drug=='A')] <- 0
