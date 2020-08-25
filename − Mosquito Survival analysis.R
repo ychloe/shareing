@@ -1,4 +1,3 @@
-#1
 #(a)
 mosquito <- read_excel("C:/Users/patrickverdun/Desktop/Exam2/mosquito.xls")
 View(mosquito)
