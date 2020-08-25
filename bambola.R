@@ -1,5 +1,5 @@
 library(readxl)
-bambola <- read_excel("C:/Users/patrickverdun/Desktop/bambola.xlsx")
+bambola <- read_excel("C:/Users/Desktop/bambola.xlsx")
 View(bambola)
 library(leaps)
 dat=bambola[bambola$LIVE==1,]
