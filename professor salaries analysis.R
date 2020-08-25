@@ -1,6 +1,6 @@
 library(rjags)
 library(MCMCvis)
-setwd("C:/Users/chloe/Desktop/final-6350")
+setwd("C:/Users/Desktop/salary")
 salaries <- read.table("salaries.txt", header=TRUE)
 
 ######Exploratory data analysis
