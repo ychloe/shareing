@@ -1,5 +1,5 @@
 library(readxl)
-data <- read_excel("C:/Users/chloe/Desktop/R project/8001/Projects/Brian Fairchild/cleaned data -chicken.xlsx")
+data <- read_excel("C:/Users/Desktop/R project/chicken.xlsx")
 data$id=paste(data$sensor,data$rep)
 View(data)
 r85data=data[data$loc=="0"& data$room_temp=="0",]
