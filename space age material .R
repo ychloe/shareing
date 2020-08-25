@@ -1,7 +1,7 @@
 library(gdata)
 library(readxl)
 # data import
-space<- read_xlsx("C:\\Users\\patrickverdun\\Desktop\\Space_Age_Material_Project.xlsx",
+space<- read_xlsx("C:\Users\Desktop\Space_Age_Material_Project.xlsx",
                 sheet = "Larger range")
 Height<-as.vector(as.matrix(space[,1]))
 Prob<-as.vector(as.matrix(space[,12]))
