@@ -1,0 +1,35 @@
+#b
+ratdrug18 <- read.csv("C:/Users/patrickverdun/Desktop/Exam2/ratdrug18.txt", sep="")
+IB <- NULL
+IB[which(ratdrug18$Drug=='B')] <- 1
+IB[which(ratdrug18$Drug=='A')] <- 0
+ratdrug18$IB <-IB
+ratdrug18$IX <-ratdrug18$IB*ratdrug18$Dose
+modA <-lm(Anxiety~Dose+IB+IX,data=ratdrug18)
+modB <-lm(Anxiety~Dose+IB,data=ratdrug18)
+modC <-lm(Anxiety~Dose+IX,data=ratdrug18)
+modD <-lm(Anxiety~Dose,data=ratdrug18)
+modE <-lm(Anxiety~1,data=ratdrug18)
+summary(modA)
+summary(modB)
+summary(modC)
+summary(modD)
+summary(modE)
+AIC(modA)
+AIC(modA, k=log(48))
+anova(modA)
+AIC(modB)
+AIC(modB, k=log(48))
+anova(modB)
+AIC(modC)
+AIC(modC, k=log(48))
+anova(modC)
+AIC(modD)
+AIC(modD, k=log(48))
+anova(modD)
+AIC(modE)
+AIC(modE, k=log(48))
+anova(modE)
+(242.16-104.59)/(104.59/44)
+anova(modA,modC)
+pf(q=57.87437, df1=1, df2=44,lower.tail=FALSE)
